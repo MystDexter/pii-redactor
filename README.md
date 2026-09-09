@@ -1,5 +1,7 @@
 # PII Redactor
 
+**Live:** https://pii-redactor-app.vercel.app/
+
 A **client-side** PII redactor. Paste text, and it detects names, emails, phone numbers, addresses and other Personally Identifiable Information (PII), then redacts them before the text goes anywhere else. Useful as a pre-processing step before pasting a document into a third-party AI tool, or as a standalone "scrub this before I send it" utility.
 
 Everything runs in the browser. **Nothing is uploaded to a server.**
