@@ -1,4 +1,5 @@
 import "./style.css";
+import piiLogo from "./assets/pii_logo.png";
 import {
   CATEGORIES,
   detectRegex,
@@ -17,7 +18,10 @@ Server logs show a login from 192.168.1.34 last Tuesday.`;
 document.querySelector("#app").innerHTML = `
 <main class="wrap">
   <header class="head">
-    <h1>PII Redactor</h1>
+    <div class="brand">
+      <img class="logo" src="${piiLogo}" alt="PII Redactor logo" width="80" height="80" />
+      <h1>PII Redactor</h1>
+    </div>
     <p class="tagline">
       Detects names, emails, phone numbers, addresses and other Personally Identifiable Information (PII), then
       redacts them before your text goes anywhere else.
