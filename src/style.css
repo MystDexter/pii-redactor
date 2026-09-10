@@ -11,6 +11,7 @@
   --warn: #f2b45c;
 
   /* Category colours (used for highlight marks, swatches and toggle borders) */
+  --c-secret: #e879f9;
   --c-email: #5b8cff;
   --c-phone: #3ecf8e;
   --c-ssn: #ff6b6b;
@@ -190,6 +191,7 @@ textarea:focus { outline: none; border-color: var(--accent); }
   color: #0f1115;
   font-weight: 600;
 }
+.pii-secret { background: var(--c-secret); }
 .pii-email { background: var(--c-email); }
 .pii-phone { background: var(--c-phone); }
 .pii-ssn { background: var(--c-ssn); }
@@ -240,6 +242,7 @@ textarea:focus { outline: none; border-color: var(--accent); }
   padding: 0 7px;
   font-size: 12px;
 }
+.toggle.pii-secret .swatch { background: var(--c-secret); }
 .toggle.pii-email .swatch { background: var(--c-email); }
 .toggle.pii-phone .swatch { background: var(--c-phone); }
 .toggle.pii-ssn .swatch { background: var(--c-ssn); }
